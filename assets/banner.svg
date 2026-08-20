@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">0nqj — Software Developer</title>
+  <desc id="description">Banner escuro em tons de violeta e ciano para o perfil de 0nqj.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B14"/>
+      <stop offset="0.52" stop-color="#11112A"/>
+      <stop offset="1" stop-color="#071A24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="violetGlow">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow">
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <clipPath id="roundedFrame">
+      <rect width="1200" height="360" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .flow {
+      animation: flow 16s linear infinite;
+      stroke-dasharray: 8 18;
+    }
+    .pulse-one { animation: pulse 3.2s ease-in-out infinite; }
+    .pulse-two { animation: pulse 3.2s ease-in-out 1.1s infinite; }
+    .pulse-three { animation: pulse 3.2s ease-in-out 2.2s infinite; }
+    .float { animation: float 7s ease-in-out infinite; transform-origin: center; }
+    @keyframes flow { to { stroke-dashoffset: -260; } }
+    @keyframes pulse { 0%, 100% { opacity: .28; } 50% { opacity: 1; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .flow, .pulse-one, .pulse-two, .pulse-three, .float { animation: none; }
+    }
+  </style>
+
+  <rect width="1200" height="360" rx="28" fill="url(#background)"/>
+  <g clip-path="url(#roundedFrame)">
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <ellipse cx="250" cy="98" rx="260" ry="190" fill="url(#violetGlow)" filter="url(#blur)"/>
+  <ellipse cx="1025" cy="280" rx="270" ry="185" fill="url(#cyanGlow)" filter="url(#blur)"/>
+
+  <path class="flow" d="M-20 292C180 218 292 352 478 284S794 196 1228 264" fill="none" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.42"/>
+  <path d="M0 28H1200" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.72"/>
+
+  <g opacity="0.72">
+    <circle class="pulse-one" cx="72" cy="72" r="4" fill="#A78BFA"/>
+    <circle class="pulse-two" cx="1128" cy="76" r="4" fill="#22D3EE"/>
+    <circle class="pulse-three" cx="1098" cy="302" r="3.5" fill="#A78BFA"/>
+    <circle class="pulse-two" cx="102" cy="286" r="3.5" fill="#22D3EE"/>
+  </g>
+
+  <g class="float" filter="url(#softShadow)">
+    <rect x="418" y="58" width="364" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <circle cx="443" cy="77" r="4" fill="#22D3EE"/>
+    <text x="600" y="82" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="4" text-anchor="middle">SOFTWARE DEVELOPER</text>
+  </g>
+
+  <text x="600" y="190" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="2" text-anchor="middle">0nqj / 範</text>
+  <text x="600" y="236" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="500" letter-spacing="1.4" text-anchor="middle">automation • bots • APIs • dashboards • interfaces</text>
+
+  <g font-family="Consolas, Courier New, monospace" font-size="13" font-weight="600" text-anchor="middle">
+    <g transform="translate(397 278)">
+      <rect width="120" height="34" rx="17" fill="#8B5CF6" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.35"/>
+      <text x="60" y="22" fill="#C4B5FD">TYPESCRIPT</text>
+    </g>
+    <g transform="translate(530 278)">
+      <rect width="106" height="34" rx="17" fill="#8B5CF6" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.35"/>
+      <text x="53" y="22" fill="#C4B5FD">NODE.JS</text>
+    </g>
+    <g transform="translate(649 278)">
+      <rect width="72" height="34" rx="17" fill="#06B6D4" fill-opacity="0.12" stroke="#22D3EE" stroke-opacity="0.35"/>
+      <text x="36" y="22" fill="#67E8F9">LUA</text>
+    </g>
+    <g transform="translate(734 278)">
+      <rect width="104" height="34" rx="17" fill="#06B6D4" fill-opacity="0.12" stroke="#22D3EE" stroke-opacity="0.35"/>
+      <text x="52" y="22" fill="#67E8F9">AUTOMATION</text>
+    </g>
+  </g>
+
+  <path d="M34 34h32M34 34v32M1166 34h-32M1166 34v32M34 326h32M34 326v-32M1166 326h-32M1166 326v-32" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2"/>
+  </g>
+</svg>
